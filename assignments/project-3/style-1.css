@@ -1,0 +1,86 @@
+/* Body Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header - Flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Sections */
+section {
+    padding: 40px;   /* Padding inside */
+    margin: 20px;    /* Margin outside */
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Skills - Flexbox */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background-color: steelblue;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Projects - Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+    gap: 20px;
+}
+
+.project-card {
+    background-color: steelblue;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Responsive - Mobile View */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;  /* 1 column on mobile */
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+    p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    span{
+        color:blue ;
+    }

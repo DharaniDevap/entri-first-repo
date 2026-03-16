@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.main-container{
+    background-color: azure;
+    background-image: url('https://wallpaperaccess.com/full/767352.jpg');
+}
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.nav-header a{
+    margin-block: 30px;
+    padding-inline:30px;
+
+}
+.box{
+    text-align: center;
+    margin: 200px;
+}
+button{
+    margin:15px;
+    padding: 20px;
+        border-radius: 30px;
+}
+.btn-2{
+    background-color: yellow;
+}

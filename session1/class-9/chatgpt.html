@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexLand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 10%;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            margin-bottom: 30px;
+            color: #cbd5e1;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .features {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FlexLand</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <button class="btn btn-primary">Get Started</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Build beautiful Layout with Flexbox</h2>
+        <p>Create modern and responsive layouts easily using CSS Flexbox. 
+        Align items, manage spacing, and build clean UI designs effortlessly.</p>
+        <div class="buttons">
+            <button class="btn btn-primary">Start Free</button>
+            <button class="btn btn-outline">Watch Demo</button>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="card">
+            <h3>Fast Layout</h3>
+            <p>Align items with just one line of CSS using Flexbox.</p>
+        </div>
+        <div class="card">
+            <h3>Clean Spacing</h3>
+            <p>Use gap property instead of margins for better control.</p>
+        </div>
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Switch between row and column layouts easily.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.main-container{
+    display:grid;
+    /*grid-template-rows: 1fr 2fr;*/
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    row-gap:10px;
+    margin-block: 20px;
+    margin-inline: 20px;
+
+}
+.card{
+    border:2px solid white;
+    background-color:cornflowerblue;
+}
+.head-1{
+    padding: 10px;
+
+}
+.para{
+padding-inline: 10px;
+padding-block: 10px;
+
+}
+@media (max-width:500px) {
+    .main-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+

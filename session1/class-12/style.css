@@ -1,0 +1,45 @@
+body{
+    background-color: beige;
+}
+   /* @media (max-width:768px){
+    body{
+        background-color: violet !important;
+    }
+}
+
+@media (max-width:1024px){
+    body{
+        background-color: blue;
+    }
+
+}
+    @media (max-width:425px){
+    body{
+        background-color: black !important;
+    }
+}*/
+/*
+body{
+    background-color: beige;
+}
+
+@media (max-width: 1024px){
+    body{
+        background-color: blue;
+    }
+}
+@media (min-width: 768px){
+    body{
+        background-color: violet;
+    }
+}
+@media (min-width: 425px){
+    body{
+        background-color: black;
+    }
+}*/
+@media (min-width: 425px) and (max-width: 1024px){
+    body{
+        background-color: brown;
+    }
+}

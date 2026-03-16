@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        #about img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 2px 2px 5px #aaa;
+        }
+
+        form {
+            max-width: 400px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        button {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>My Profile</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="profile.jpeg" alt="My Profile Picture">
+    <p>
+    I am a student learning Full Stack Development.
+        I enjoy creating websites and learning new technologies.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Paripal</h3>
+            <article>
+               <h4>Technologies</h4>            
+            <ul>
+                <li>Java</li>
+                <li>Angular js</li>
+            </ul>
+            </article>
+            <article>E-Health platform which aims to address pain 
+                problems that end user today have such as admissiom formalities,centralized medical history</article>
+        </div>
+
+        <div class="project-card">
+            <h3>Radius</h3>
+                        <article>
+               <h4>Technologies</h4>            
+            <ul>
+                <li>Java</li>
+                <li>Angular</li>
+            </ul>
+            </article>
+         <article>Radius is EMR Application Which Work with Multiple clinics</article>
+
+        </div>
+
+        <div class="project-card">
+            <h3>Appriasal System</h3>
+                        <article>
+               <h4>Technologies</h4>            
+            <ul>
+                <li>Java</li>
+                <li>Angular</li>
+            </ul>
+            </article>
+
+         <article>This  Application developed for Employee Performence Rating</article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Please Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Please Enter your Email" required>
+
+        <label>Mobile Number:</label>
+        <input type="Number" name="mobile" placeholder="Please Enter your Email" required>
+
+        <label>Message:</label>
+        <textarea name="message" rows="5" placeholder="Please Enter your Feedback" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© copy  writes 2026 </p>
+</footer>
+
+</body>
+</html>
