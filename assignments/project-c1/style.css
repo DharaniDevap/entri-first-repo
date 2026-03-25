@@ -7,7 +7,6 @@
     padding-block: 70px;
 }
 
-
 .hero{
     height: 100vh;
     background-image: url('./images/hero-bg.jpg');
@@ -99,6 +98,11 @@ a:hover{
     height: 165px;
     border-radius: 50%;
 }
+.rect-card:hover img{
+    top: 0; /* Move to top */
+left: 0; /* Move to left */
+transform: scale(1.1); /* Optional zoom effect */
+}
 .react-content{
     display: flex;
     flex-direction: column;
@@ -165,6 +169,11 @@ a:hover{
     object-fit: contain;
 
 }
+.our-menu-card:hover img{
+    top: 0; /* Move to top */
+left: 0; /* Move to left */
+transform: scale(1.1); /* Optional zoom effect */
+}
 .our-menu-card-content{
     display: flex;
     flex-direction: column;
@@ -214,6 +223,11 @@ a:hover{
     width: 100%;
     max-width: 445px;
 }
+    .about-us:hover img{
+        top: 0; /* Move to top */
+left: 0; /* Move to left */
+transform: scale(1.1); /* Optional zoom effect */
+    }
 .about-us-content{
     display: flex;
     flex-direction: column;
