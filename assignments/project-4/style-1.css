@@ -1,0 +1,8 @@
+.footer {
+    position: fixed;
+    background-color: black;
+}
+.header{
+    position: static;
+    background-color: black;
+}
