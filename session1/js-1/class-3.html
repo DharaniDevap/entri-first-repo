@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="fruit">Apple</p>
+    <p class="fruit">orange</p>
+    <h1 id="title">Welcome</h1>
+    <p id="message">This is old text</p>
+
+<p class="fruit-1">Apple</p>
+<p class="fruit-1">Banana</p>
+<p class="fruit-1">Mango</p>
+
+<p class="note">Note 1</p>
+<p class="note">Note 2</p>
+<p class="note">Note 3</p>
+
+<p>Hello</p>
+<p>How are you?</p>
+<p>Good morning</p>
+
+<h1 id="title">Welcome</h1>
+<p class="text">One</p>
+<p class="text">Two</p>
+<button>Send</button>
+<button>Reset</button>
+</body>
+<script>
+    // [apple,orange]
+    let quryClass=document.querySelectorAll(".fruit")
+    console.log(quryClass)
+    length = quryClass.length
+    for(let i=0;i<length;i++){
+            quryClass[i].innerHTML="berry"
+
+    }
+            let h1Id = document.getElementById("title")
+    message.innerText="Welcome To Javascript class"
+
+    let paraClass = document.getElementsByClassName("text")
+    let paraLen = paraClass.length
+    for(let i=0;i<paraLen;i++){
+        paraClass[i].innerText ="Four"
+    }
+        let buttonExp = document.getElementsByTagName("button")
+        let blen = buttonExp.length
+    for(let i=0;i<blen;i++){
+        buttonExp[i].innerText ="upload"
+    }
+
+
+    let welcome = document.getElementById("title")
+    welcome.innerText="Hello Text"
+
+        let msg = document.getElementById("message")
+    message.innerText="Javascript is easy"
+
+    let classExp = document.getElementsByClassName("fruit-1")
+    let classLen = classExp.length
+    for(let i=0;i<classLen;i++){
+        classExp[i].innerText ="Orange"
+    }
+    let noteclass = document.getElementsByClassName("note")
+    noteclass[0].innerText="Important Note"
+
+    let tagExp = document.getElementsByTagName("p")
+        let taglen = tagExp.length
+    for(let i=0;i<taglen;i++){
+        tagExp[i].innerText ="Changed by JavaScript"
+    }
+
+</script>
+</html>
