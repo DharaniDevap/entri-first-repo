@@ -1,0 +1,14 @@
+div{
+    border: 2px solid red ;
+    display: inline-block;
+    margin:2px;
+}
+button{
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+input {
+    padding: 10px;
+}

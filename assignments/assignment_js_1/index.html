@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Website</title>
+    <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="inputtext"></td>
+                <td><button value="c">C</button></td>
+            </tr>
+            <tr>
+                <td><button value="1" onclick="clickbuttonfun(1)">1</button></td>
+                <td><button value="2" onclick="clickbuttonfun(2)">2</button></td>
+                <td><button value="3" onclick="clickbuttonfun(3)">3</button></td>
+                <td><button value="/" onclick="clickbuttonfun('/')">/</button></td>
+            </tr>
+             <tr>
+                <td><button value="4" onclick="clickbuttonfun(4)">4</button></td>
+                <td><button value="5" onclick="clickbuttonfun(5)">5</button></td>
+                <td><button value="6" onclick="clickbuttonfun(6)">6</button></td>
+                <td><button value="*" onclick="clickbuttonfun('*')">*</button></td>
+            </tr>
+             <tr>
+                <td><button value="7" onclick="clickbuttonfun(7)">7</button></td>
+                <td><button value="8" onclick="clickbuttonfun(8)">8</button></td>
+                <td><button value="9" onclick="clickbuttonfun(9)">9</button></td>
+                <td><button value="-" onclick="clickbuttonfun('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button value="0" onclick="clickbuttonfun(0)">0</button></td>
+                <td><button value="." onclick="clickbuttonfun('.')">.</button></td>
+                <td><button value="=" onclick="clickbuttonfun('=')">=</button></td>
+                <td><button value="+" onclick="clickbuttonfun('+')">+</button></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+   <script src="./index.js"></script> 
+</body>
+</html>
