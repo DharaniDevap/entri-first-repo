@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter first number" id="num1" />
+        <input type="number" placeholder="Enter second number" id="num2" />
+        <br>
+                <button id="add"class="button">Add</button>
+                <button id="sub" class="button">Subtract</button>
+                <button id="mul" class="button">Multiply</button>
+                    <button id="div" class="button">Division</button>
+                    <br>
+                    <p id="results">Results:</p>
+
+<script>
+    let button = document.getElementsByTagName("button");
+    let results=document.getElementById("results");
+
+    function sumOfTwoNumber(event){
+    let number1=document.getElementById("num1").value;
+    let number2=document.getElementById("num2").value;
+    let id = event.target.id;
+        console.log("id",event.target.id);
+        let result = "";
+    if(id=="add"){
+     result=Number(number1)+Number(number2);
+    }
+    if(id=="sub"){
+    result=Number(number1)-Number(number2);
+
+    }
+    if(id=="mul"){
+        result=Number(number1)*Number(number2);
+
+    }
+    if(id=="div"){
+    result=Number(number1)/Number(number2);
+
+    }
+    results.innerText="Results:"+result
+}
+
+for(let i=0;i<button.length;i++){
+button[i].addEventListener("click",sumOfTwoNumber)
+
+}
+
+</script>
+
+</body>
+</html>
