@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin: 0;
+    }
+
+.card {
+        background-color: #fff;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+        overflow: hidden;
+        transition: transform 0.2s ease;
+    }
+
+
+.card:hover {
+        transform: scale(1.03);
+    }
+    
+
+    </style>
 </head>
 <body>
-    <input type="number" placeholder="Enter first number" id="num1" />
+    <div class="card">
+        <input type="number" placeholder="Enter first number" id="num1" />
         <input type="number" placeholder="Enter second number" id="num2" />
         <br>
                 <button id="add"class="button">Add</button>
@@ -15,6 +43,8 @@
                     <button id="div" class="button">Division</button>
                     <br>
                     <p id="results">Results:</p>
+    </div>
+    
 
 <script>
     let button = document.getElementsByTagName("button");
