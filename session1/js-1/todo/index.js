@@ -12,28 +12,46 @@ button.addEventListener("click",function(){
    
 
 })
+function deleteItem(index) {
+  todoArray.splice(index, 1);
+  console.log(todoArray)
+localStorage.setItem("todos_key",JSON.stringify(todoArray))
+   showtodo();
+}
+
+function hoverItem(index){
+}
 
 function showtodo(){
     ulist.innerHTML = "";
     let length = todoArray.length;
-    for(let i=0;i<length;i++){
+    if(length>0){
+          for(let i=0;i<length;i++){
        let id="i"
   let lielement = document.createElement("li");
-  var checkbox = document.createElement('input');
+  const checkbox = document.createElement('input');
 checkbox.type = "checkbox";
-// checkbox.name = "name";
-// checkbox.value = "value";
 checkbox.id = "id";
-
-// var label = document.createElement('label')
-// label.htmlFor = "id";
-// label.appendChild(document.createTextNode('text for label after checkbox'));
 
 
    lielement.innerText = todoArray[i];
-   lielement.appendChild(checkbox);
+  // lielement.appendChild(checkbox);
+//    checkbox.addEventListener('click',()=> function(i)
+// {
+//    lielement.innerHTML ="<del>hello</del>"
+// })
+       const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', () => deleteItem(i));
+    lielement.appendChild(deleteButton);
+
 
     ulist.appendChild(lielement);
+    }
 
+    }else{
+          ulist.innerHTML = "<h1>No Data Available</h1>";
+
+      
     }
 }

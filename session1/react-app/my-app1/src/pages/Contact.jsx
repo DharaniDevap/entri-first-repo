@@ -1,0 +1,7 @@
+export const Contact = ()=>{
+    return(
+        <div>
+        <h1>Welcome to Contact us Page</h1>
+        </div>
+    )
+}
