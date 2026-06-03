@@ -1,7 +1,8 @@
 export const Contact = ()=>{
     return(
-        <div>
-        <h1>Welcome to Contact us Page</h1>
-        </div>
+        <form>
+            <label htmlFor="name">Name:</label>
+            <input type="text" name="name"/>
+        </form>
     )
 }
